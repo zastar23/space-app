@@ -1,0 +1,9 @@
+{
+	"name": "space-tourism-website-main",
+	"version": "1.0.0",
+	"description": "Space tourism multi-page website",
+	"main": "index.js",
+	"scripts": {},
+	"author": "Florin Porut",
+	"license": "ISC"
+}

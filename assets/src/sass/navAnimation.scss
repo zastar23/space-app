@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+$text-color: #d0d6f9;
+$btn-text-color: #0b0d17;
+$neutral: #fff;
+$nav-neutral: #979797;
+$barlow: "Barlow Condensed", sans-serif;
+$bella: "Bellefair", serif;
+
+.nav {
+	font-family: $bella;
+	color: $neutral;
+	font-size: var(--step-0);
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: end;
+	width: 80%;
+	overflow: hidden;
+
+	&--hamburger {
+		position: absolute;
+		top: 3%;
+		right: 3%;
+		transform: translate(-3%, -3%);
+		z-index: 10;
+	}
+
+	&--ul {
+		list-style-type: none;
+		letter-spacing: 2px;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-content: center;
+		min-height: 100vh;
+		align-items: start;
+		width: 100%;
+		position: relative;
+		z-index: 2;
+		padding-left: 2rem;
+	}
+
+	&--li--anchor {
+		color: $neutral;
+		text-decoration: none;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.cross {
+	position: absolute;
+	top: 3%;
+	right: 10%;
+	transform: translate(-3%, -10%);
+}
+
+.blur {
+	width: 80%;
+	left: 20%;
+	position: absolute;
+	min-height: 118.3vh;
+	// filter: blur(1.5rem);
+	// filter: brightness(50%);
+	background-color: rgba(255, 255, 255, 0.15);
+
+	backdrop-filter: blur(15px);
+	z-index: 2;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.move-in {
+	// visibility: visible;
+	animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-hor-right {
+	0% {
+		transform: scaleX(0);
+		transform-origin: 100% 100%;
+		// opacity: 0;
+	}
+	100% {
+		transform: scaleX(1);
+		transform-origin: 100% 100%;
+		// opacity: 0.9;
+	}
+}
+
+.move-out {
+	animation: scale-out-hor-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+		both;
+}
+
+@keyframes scale-out-hor-right {
+	0% {
+		transform: scaleX(1);
+		transform-origin: 100% 100%;
+		// opacity: 0.9;
+	}
+	100% {
+		transform: scaleX(0);
+		transform-origin: 100% 100%;
+		// opacity: 0.8;
+	}
+}

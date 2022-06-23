@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./assets/style/navAnimation.css" />
+		<link rel="stylesheet" href="./assets/style/main.css" />
+		<script
+			type="module"
+			src="./assets/src/script/navAnimation.js"
+		></script>
+		<script
+			type="module"
+			src="./assets/src/script/destinations.js"
+		></script>
+		<title>Frontend Mentor | Space tourism website</title>
+	</head>
+	<body class="background--destinations">
+		<header class="header">
+			<div class="blur move-out"></div>
+			<div class="header--logo">
+				<img
+					src="./assets/shared/logo.svg"
+					alt="Site logo"
+					class="logo"
+					width="100"
+					height="70"
+				/>
+			</div>
+			<nav class="nav">
+				<div class="nav--hamburger">
+					<img
+						id="nav_toggle"
+						src="./assets/shared/icon-hamburger.svg"
+						alt="hamburger nav icon"
+						class="hamburger"
+					/>
+					<img
+						src="./assets/shared/icon-close.svg"
+						alt="Close icon"
+						class="cross hidden"
+					/>
+				</div>
+				<ul class="nav--ul move-out">
+					<li class="nav--li--item">
+						<a class="nav--li--anchor" href="./index.html"
+							>00 Home</a
+						>
+					</li>
+					<li class="nav--li--item">
+						<a
+							class="nav--li--anchor"
+							href="./destination-moon.html"
+							>01 Destination</a
+						>
+					</li>
+					<li class="nav--li--item">
+						<a class="nav--li--anchor" href="./crew-commander.html"
+							>02 Crew</a
+						>
+					</li>
+					<li class="nav--li--item">
+						<a
+							class="nav--li--anchor"
+							href="./technology-vehicle.html"
+							>03 Technology</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main main--destinations">
+			<div class="main--destinations--slider_container">
+				<div class="main--destinations--slider">
+					<p class="main--destinations--nav--location">
+						<span class="nr">01 </span> Pick your destination
+					</p>
+					<img
+						src="./assets/destination/image-moon.webp"
+						alt="Our moon"
+						width="200"
+						height="200"
+						class="main--moon"
+					/>
+
+					<ul class="main--destinations--slider_list">
+						<li id="moon" class="main--slider_list--item">Moon</li>
+						<li id="mars" class="main--slider_list--item">Mars</li>
+						<li id="europa" class="main--slider_list--item">
+							Europa
+						</li>
+						<li id="titan" class="main--slider_list--item">
+							Titan
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="main--destinations--planet--info">
+				<div class="main--destinations--planet--info_container">
+					<h1 class="main--destinations--planet--heading">Moon</h1>
+					<p class="main--destinations--planet--info_text">
+						See our planet as you’ve never seen it before. A perfect
+						relaxing trip away to help regain perspective and come
+						back refreshed. While you’re there, take in some history
+						by visiting the Luna 2 and Apollo 11 landing sites.
+					</p>
+				</div>
+			</section>
+			<hr class="main--destinations--line" />
+			<section class="main--destinations--distances">
+				<div class="main--destinations--distances_values">
+					<h2 class="avg-distance">
+						Avg. distance<span id="km" class="big-number"
+							>384,400 km</span
+						>
+					</h2>
+					<h2 class="avg-time">
+						Est. travel time<span id="days" class="big-number"
+							>3 days</span
+						>
+					</h2>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

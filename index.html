@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./assets/style/navAnimation.css" />
+		<link rel="stylesheet" href="./assets/style/main.css" />
+
+		<script
+			type="module"
+			src="./assets/src/script/navAnimation.js"
+		></script>
+		<title>Frontend Mentor | Space tourism website</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="blur move-out"></div>
+			<div class="header--logo">
+				<img
+					src="./assets/shared/logo.svg"
+					alt="Site logo"
+					class="logo"
+					width="100"
+					height="70"
+				/>
+			</div>
+			<nav class="nav">
+				<div class="nav--hamburger">
+					<img
+						id="nav_toggle"
+						src="./assets/shared/icon-hamburger.svg"
+						alt="hamburger nav icon"
+						class="hamburger"
+					/>
+					<img
+						src="./assets/shared/icon-close.svg"
+						alt="Close icon"
+						class="cross hidden"
+					/>
+				</div>
+				<ul class="nav--ul move-out">
+					<li class="nav--li--item">
+						<a class="nav--li--anchor" href="./index.html"
+							>00 Home</a
+						>
+					</li>
+					<li class="nav--li--item">
+						<a class="nav--li--anchor" href="./destinations.html"
+							>01 Destination</a
+						>
+					</li>
+					<li class="nav--li--item">
+						<a class="nav--li--anchor" href="./crew-commander.html"
+							>02 Crew</a
+						>
+					</li>
+					<li class="nav--li--item">
+						<a
+							class="nav--li--anchor"
+							href="./technology-vehicle.html"
+							>03 Technology</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<h1 class="main--heading">
+				So, you want to travel to
+				<span class="main--heading--style">Space</span>
+			</h1>
+			<p class="main--intro_text">
+				Let’s face it; if you want to go to space, you might as well
+				genuinely go to outer space and not hover kind of on the edge of
+				it. Well sit back, and relax because we’ll give you a truly out
+				of this world experience!
+			</p>
+			<button class="main--btn_explore">Explore</button>
+		</main>
+	</body>
+</html>
