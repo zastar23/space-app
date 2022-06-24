@@ -41,6 +41,7 @@ $bella: "Bellefair", serif;
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
+	padding: 3%;
 
 	&--heading {
 		font-family: $bella;
@@ -72,10 +73,10 @@ $bella: "Bellefair", serif;
 		z-index: 1;
 		width: 80%;
 		left: 10%;
-		top: 45%;
+		top: 47%;
 		opacity: 0.5;
 		background-color: $neutral;
-		transform: translate(-10% -45%);
+		transform: translate(-10% -47%);
 	}
 
 	&-dots {
