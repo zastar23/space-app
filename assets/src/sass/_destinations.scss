@@ -58,6 +58,7 @@ $bella: "Bellefair", serif;
 		letter-spacing: 2px;
 		position: relative;
 		z-index: 1;
+		gap: 1rem;
 	}
 
 	&--planet--heading {
@@ -117,16 +118,57 @@ $bella: "Bellefair", serif;
 
 	&:hover {
 		cursor: pointer;
-		border-bottom: solid rgba(255, 255, 255, 0.5);
+		border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+		margin-bottom: -5px;
 	}
+}
 
-	&:active {
-		border-bottom: 5px solid $neutral;
-	}
+.active {
+	border-bottom: 5px solid $neutral;
+	margin-bottom: -5px;
 }
 
 .nr {
 	opacity: 0.4;
 	font-weight: 900;
 	margin: 0 0.4rem 0 0;
+}
+
+@media (min-width: 760px) {
+	.background--destinations {
+		background-image: url("../destination/background-destination-tablet.jpg");
+		background-size: cover;
+	}
+
+	.main--moon {
+		width: 25rem;
+		height: 25rem;
+	}
+
+	.main--destinations--nav--location {
+		align-self: start;
+		font-size: var(--step-1);
+		padding-left: 1rem;
+	}
+
+	.main--destinations--slider_list {
+		font-size: var(--step-3);
+		gap: 3rem;
+	}
+
+	.main--destinations--planet--heading {
+		font-size: 7rem;
+	}
+
+	.main--destinations--planet--info_text {
+		font-size: var(--step-1);
+	}
+
+	.main--destinations--distances_values {
+		flex-direction: row;
+	}
+
+	.big-number {
+		font-size: var(--step-4);
+	}
 }

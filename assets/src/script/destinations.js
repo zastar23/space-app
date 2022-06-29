@@ -4,6 +4,12 @@ const title = document.querySelector(".main--destinations--planet--heading");
 const text = document.querySelector(".main--destinations--planet--info_text");
 let distance = document.querySelector("#km");
 let time = document.querySelector("#days");
+const btnContainer = document.querySelector(".main--destinations--slider_list");
+
+btnContainer.addEventListener("click", (e) => {
+	if (!e.target.classList.contains("main--slider_list--item")) return;
+	const btnClicked = e.target;
+});
 
 const moonData = function () {
 	const moonBtn = document.querySelector("#moon");
