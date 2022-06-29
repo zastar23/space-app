@@ -115,3 +115,73 @@ $bella: "Bellefair", serif;
 		// opacity: 0.8;
 	}
 }
+
+@media (min-width: 700px) {
+	.move-in {
+		animation: none;
+	}
+	.move-out {
+		animation: none;
+	}
+	.nav {
+		position: static;
+		min-height: 10%;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		overflow: visible;
+
+		&--hamburger {
+			display: none;
+		}
+
+		&--ul {
+			min-height: 0;
+			flex-direction: row;
+			gap: 3rem;
+			justify-content: end;
+			align-items: center;
+			margin-top: 0.5rem;
+			padding-right: 1rem;
+		}
+
+		&--li--anchor {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: $neutral;
+				height: 3px;
+				width: 0%;
+				left: 0;
+				bottom: -1.5rem;
+				transition: 0.3s;
+				z-index: 100;
+			}
+		}
+	}
+
+	.nav--li--anchor:hover::after {
+		width: 100%;
+	}
+
+	.blur {
+		min-height: 5rem;
+		width: 70%;
+		left: 30%;
+		opacity: 0.4;
+	}
+
+	.cros {
+		display: none;
+	}
+
+	.order {
+		display: none;
+	}
+
+	.header {
+		align-items: center;
+	}
+}
