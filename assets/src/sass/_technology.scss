@@ -68,3 +68,21 @@ $bella: "Bellefair", serif;
 		padding: 4%;
 	}
 }
+
+@media (min-width: 700px) {
+	.techno {
+		width: 100%;
+	}
+
+	.main--technology--vehicle {
+		width: 100%;
+		height: 20rem;
+	}
+
+	.main--technology-btns .btn {
+		width: 5rem;
+		height: 5rem;
+		font-size: var(--step-2);
+		margin: 0 0.5rem;
+	}
+}

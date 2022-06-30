@@ -301,10 +301,10 @@ body {
   z-index: 1;
   width: 80%;
   left: 10%;
-  top: 47%;
+  top: 50%;
   opacity: 0.5;
   background-color: #fff;
-  transform: translate(-10% -47%);
+  transform: translate(-10% -50%);
 }
 .main--crew-dots {
   border: none;
@@ -338,6 +338,43 @@ body {
   z-index: 0;
 }
 
+@media (min-width: 700px) {
+  .background--crew {
+    background-image: url("../crew/background-crew-tablet.jpg");
+  }
+  .main--crew {
+    justify-content: start !important;
+  }
+  .main--crew--line {
+    display: none;
+  }
+  .main--crew--container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main--crew--info_text {
+    font-size: var(--step-1);
+    line-height: 2;
+  }
+  .main--crew-dots {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 2rem;
+  }
+  .role {
+    font-size: var(--step-3);
+    letter-spacing: 20px;
+  }
+  .main--crew--heading .name {
+    font-size: var(--step-5);
+  }
+  .crew--member {
+    margin-top: 7rem;
+    width: 30rem;
+    height: 30rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -395,6 +432,21 @@ body {
   padding: 4%;
 }
 
+@media (min-width: 700px) {
+  .techno {
+    width: 100%;
+  }
+  .main--technology--vehicle {
+    width: 100%;
+    height: 20rem;
+  }
+  .main--technology-btns .btn {
+    width: 5rem;
+    height: 5rem;
+    font-size: var(--step-2);
+    margin: 0 0.5rem;
+  }
+}
 @media (min-width: 700px) {
   body {
     background-image: url("../home/background-home-tablet.jpg");
