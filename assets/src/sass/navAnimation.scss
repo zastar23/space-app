@@ -170,7 +170,6 @@ $bella: "Bellefair", serif;
 		min-height: 5rem;
 		width: 70%;
 		left: 30%;
-		opacity: 0.4;
 	}
 
 	.cros {
@@ -183,5 +182,25 @@ $bella: "Bellefair", serif;
 
 	.header {
 		align-items: center;
+	}
+}
+
+@media (min-width: 1400px) {
+	.order {
+		display: block;
+		margin-right: 1rem;
+	}
+
+	.header {
+		margin-top: 2rem;
+	}
+
+	.nav--li--anchor {
+		display: inline-flex;
+	}
+
+	.blur {
+		width: 60%;
+		left: 40%;
 	}
 }

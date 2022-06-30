@@ -103,3 +103,72 @@ body {
 		cursor: pointer;
 	}
 }
+
+@media (min-width: 700px) {
+	body {
+		background-image: url("../home/background-home-tablet.jpg");
+	}
+
+	.header .logo {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	.main {
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	.main--heading {
+		font-size: var(--step-1);
+
+		&--style {
+			font-size: 10rem;
+		}
+	}
+
+	.main--intro_text {
+		font-size: var(--step-1);
+		padding: 2rem;
+	}
+
+	.main--btn_explore {
+		height: 24rem;
+		width: 24rem;
+		font-size: var(--step-4);
+	}
+}
+
+@media (min-width: 1400px) {
+	body {
+		background-image: url("../home/background-home-desktop.jpg");
+		background-size: cover;
+		background-position: right;
+	}
+
+	.header .logo {
+		width: 3rem;
+		height: 3rem;
+		margin-left: 3rem;
+	}
+
+	.main {
+		flex-direction: row;
+		justify-content: space-between;
+
+		&--flex-container {
+			width: 50%;
+			text-align: left;
+			margin-left: 10rem;
+		}
+
+		&--intro_text {
+			padding: 0;
+			width: 45ch;
+		}
+
+		&--btn_explore {
+			margin-right: 5rem;
+		}
+	}
+}

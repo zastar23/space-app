@@ -2,33 +2,3 @@
 @import "./destinations";
 @import "./crew";
 @import "./technology";
-
-@media (min-width: 700px) {
-	body {
-		background-image: url("../home/background-home-tablet.jpg");
-	}
-
-	.main {
-		justify-content: center;
-		margin-top: 2rem;
-	}
-
-	.main--heading {
-		font-size: var(--step-1);
-
-		&--style {
-			font-size: 10rem;
-		}
-	}
-
-	.main--intro_text {
-		font-size: var(--step-1);
-		padding: 2rem;
-	}
-
-	.main--btn_explore {
-		height: 24rem;
-		width: 24rem;
-		font-size: var(--step-4);
-	}
-}
