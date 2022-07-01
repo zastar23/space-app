@@ -86,3 +86,45 @@ $bella: "Bellefair", serif;
 		margin: 0 0.5rem;
 	}
 }
+
+@media (min-width: 1400px) {
+	.background--technology {
+		background-image: url("../technology/background-technology-desktop.jpg");
+	}
+
+	.main--technology {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		padding: 4%;
+		gap: 4rem;
+
+		&-btns {
+			grid-column: 1;
+			flex-direction: column;
+			grid-row: 2;
+		}
+
+		&--info {
+			grid-column: 2;
+			grid-row: 2;
+			text-align: left;
+		}
+	}
+
+	.techno {
+		grid-column: 3 / span 2;
+		grid-row: 2;
+	}
+
+	.main--crew--heading .techno-name {
+		font-size: var(--step-3);
+	}
+
+	.main--crew--heading .techno-role {
+		font-size: var(--step-2);
+	}
+
+	.main--technology--info_container .techno--text {
+		font-size: var(--step-0);
+	}
+}

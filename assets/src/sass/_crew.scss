@@ -157,3 +157,23 @@ $bella: "Bellefair", serif;
 		height: 30rem;
 	}
 }
+
+@media (min-width: 1400px) {
+	.background--crew {
+		background-image: url("../crew/background-crew-desktop.jpg");
+	}
+	.main--crew--container {
+		flex-direction: row-reverse;
+		gap: 11rem;
+	}
+
+	.main--crew----info {
+		text-align: left;
+		margin: 5rem auto;
+		width: 50%;
+	}
+
+	.dot-container {
+		justify-content: start;
+	}
+}

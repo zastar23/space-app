@@ -172,3 +172,52 @@ $bella: "Bellefair", serif;
 		font-size: var(--step-4);
 	}
 }
+
+@media (min-width: 1400px) {
+	.background--destinations {
+		background-image: url("../destination/background-destination-desktop.jpg");
+		background-size: cover;
+	}
+
+	.main--destinations {
+		position: relative;
+		gap: 10rem;
+		padding: 4%;
+
+		&--nav--location {
+			position: absolute;
+		}
+
+		&--slider_list {
+			gap: 2rem;
+			justify-content: start;
+		}
+
+		&--planet--heading {
+			text-align: left;
+			margin: 2rem 0;
+		}
+
+		&--line {
+			margin: 4rem 0 1rem 1rem;
+		}
+
+		&--distances_values {
+			text-align: left;
+			margin-left: 1rem;
+		}
+
+		.main--destinations--planet--info_text {
+			text-align: left;
+		}
+	}
+
+	.main--moon {
+		width: 35rem;
+		height: 35rem;
+	}
+
+	.big-number {
+		font-size: var(--step-2);
+	}
+}

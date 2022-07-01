@@ -296,6 +296,45 @@ body {
     font-size: var(--step-4);
   }
 }
+@media (min-width: 1400px) {
+  .background--destinations {
+    background-image: url("../destination/background-destination-desktop.jpg");
+    background-size: cover;
+  }
+  .main--destinations {
+    position: relative;
+    gap: 10rem;
+    padding: 4%;
+  }
+  .main--destinations--nav--location {
+    position: absolute;
+  }
+  .main--destinations--slider_list {
+    gap: 2rem;
+    justify-content: start;
+  }
+  .main--destinations--planet--heading {
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .main--destinations--line {
+    margin: 4rem 0 1rem 1rem;
+  }
+  .main--destinations--distances_values {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .main--destinations .main--destinations--planet--info_text {
+    text-align: left;
+  }
+  .main--moon {
+    width: 35rem;
+    height: 35rem;
+  }
+  .big-number {
+    font-size: var(--step-2);
+  }
+}
 *,
 *::before,
 *::after {
@@ -431,6 +470,23 @@ body {
     height: 30rem;
   }
 }
+@media (min-width: 1400px) {
+  .background--crew {
+    background-image: url("../crew/background-crew-desktop.jpg");
+  }
+  .main--crew--container {
+    flex-direction: row-reverse;
+    gap: 11rem;
+  }
+  .main--crew----info {
+    text-align: left;
+    margin: 5rem auto;
+    width: 50%;
+  }
+  .dot-container {
+    justify-content: start;
+  }
+}
 *,
 *::before,
 *::after {
@@ -501,6 +557,40 @@ body {
     height: 5rem;
     font-size: var(--step-2);
     margin: 0 0.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .background--technology {
+    background-image: url("../technology/background-technology-desktop.jpg");
+  }
+  .main--technology {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 4%;
+    gap: 4rem;
+  }
+  .main--technology-btns {
+    grid-column: 1;
+    flex-direction: column;
+    grid-row: 2;
+  }
+  .main--technology--info {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+  }
+  .techno {
+    grid-column: 3/span 2;
+    grid-row: 2;
+  }
+  .main--crew--heading .techno-name {
+    font-size: var(--step-3);
+  }
+  .main--crew--heading .techno-role {
+    font-size: var(--step-2);
+  }
+  .main--technology--info_container .techno--text {
+    font-size: var(--step-0);
   }
 }
 
