@@ -203,4 +203,18 @@ $bella: "Bellefair", serif;
 		width: 60%;
 		left: 40%;
 	}
+
+	.header--line {
+		width: 50%;
+		position: relative;
+		z-index: 2;
+		opacity: 0.4;
+		background-color: $neutral;
+	}
+}
+
+// active
+
+.nav--li--anchor:focus::after {
+	width: 100%;
 }

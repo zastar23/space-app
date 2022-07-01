@@ -167,6 +167,16 @@
     width: 60%;
     left: 40%;
   }
+  .header--line {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    opacity: 0.4;
+    background-color: #fff;
+  }
+}
+.nav--li--anchor:focus::after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=navAnimation.css.map */

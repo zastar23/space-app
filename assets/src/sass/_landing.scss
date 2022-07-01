@@ -89,13 +89,18 @@ body {
 		height: 12rem;
 		width: 12rem;
 		font-family: $bella;
-		color: $btn-text-color;
+
 		font-size: var(--step-2);
 		text-transform: uppercase;
 		border-radius: 50%;
 		border: none;
 		position: relative;
 		z-index: 1;
+
+		& a {
+			text-decoration: none;
+			color: $btn-text-color;
+		}
 	}
 
 	&--btn_explore:hover {
