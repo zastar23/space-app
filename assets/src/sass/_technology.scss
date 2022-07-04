@@ -95,7 +95,7 @@ $bella: "Bellefair", serif;
 	.main--technology {
 		display: grid;
 		grid-template-columns: repeat(3, auto);
-		padding: 4%;
+		padding: 4% 0 4% 4%;
 		gap: 4rem;
 
 		&-btns {
@@ -109,6 +109,11 @@ $bella: "Bellefair", serif;
 			grid-row: 2;
 			text-align: left;
 		}
+	}
+
+	.main--technology--vehicle {
+		width: 40rem;
+		height: 30rem;
 	}
 
 	.techno {

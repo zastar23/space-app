@@ -257,7 +257,7 @@ body {
   margin-bottom: -5px;
 }
 
-.active {
+.active-names {
   border-bottom: 5px solid #fff;
   margin-bottom: -5px;
 }
@@ -407,7 +407,7 @@ body {
 .main--crew-dots {
   border: none;
   background-color: #fff;
-  opacity: 0.7;
+  opacity: 0.3;
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 50%;
@@ -490,6 +490,10 @@ body {
     justify-content: start;
   }
 }
+.active {
+  opacity: 1;
+}
+
 *,
 *::before,
 *::after {
@@ -569,7 +573,7 @@ body {
   .main--technology {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    padding: 4%;
+    padding: 4% 0 4% 4%;
     gap: 4rem;
   }
   .main--technology-btns {
@@ -581,6 +585,10 @@ body {
     grid-column: 2;
     grid-row: 2;
     text-align: left;
+  }
+  .main--technology--vehicle {
+    width: 40rem;
+    height: 30rem;
   }
   .techno {
     grid-column: 3/span 2;

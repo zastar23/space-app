@@ -82,7 +82,7 @@ $bella: "Bellefair", serif;
 	&-dots {
 		border: none;
 		background-color: $neutral;
-		opacity: 0.7;
+		opacity: 0.3;
 		height: 0.5rem;
 		width: 0.5rem;
 		border-radius: 50%;
@@ -176,4 +176,8 @@ $bella: "Bellefair", serif;
 	.dot-container {
 		justify-content: start;
 	}
+}
+
+.active {
+	opacity: 1;
 }

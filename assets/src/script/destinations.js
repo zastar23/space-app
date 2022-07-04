@@ -20,6 +20,7 @@ const moonData = function () {
 		text.innerHTML = data.destinations[0].description;
 		distance.innerHTML = data.destinations[0].distance;
 		time.innerHTML = data.destinations[0].travel;
+		activeElement(1);
 	});
 };
 
@@ -32,6 +33,7 @@ const marsData = function () {
 		text.innerHTML = data.destinations[1].description;
 		distance.innerHTML = data.destinations[1].distance;
 		time.innerHTML = data.destinations[1].travel;
+		activeElement(2);
 	});
 };
 
@@ -44,6 +46,7 @@ const europaData = function () {
 			text.innerHTML = data.destinations[2].description;
 			distance.innerHTML = data.destinations[2].distance;
 			time.innerHTML = data.destinations[2].travel;
+			activeElement(3);
 		});
 };
 
@@ -56,7 +59,18 @@ const titanData = function () {
 			text.innerHTML = data.destinations[3].description;
 			distance.innerHTML = data.destinations[3].distance;
 			time.innerHTML = data.destinations[3].travel;
+			activeElement(4);
 		});
+};
+
+const activeElement = function (dataNr) {
+	document
+		.querySelectorAll(".main--slider_list--item")
+		.forEach((item) => item.classList.remove("active-names"));
+
+	document
+		.querySelector(`.main--slider_list--item[data-nr='${dataNr}']`)
+		.classList.add("active-names");
 };
 
 const init = function () {
